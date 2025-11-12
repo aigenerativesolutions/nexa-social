@@ -97,10 +97,10 @@ export default function ContatoPage() {
                 <div>
                   <h3 className="font-bold text-brand-purple mb-1">E-mail</h3>
                   <a
-                    href="mailto:contato@nexasocial.com.br"
+                    href="mailto:luizadcaracek@gmail.com"
                     className="text-brand-gray hover:text-brand-orange transition-colors"
                   >
-                    contato@nexasocial.com.br
+                    luizadcaracek@gmail.com
                   </a>
                 </div>
               </div>
@@ -112,12 +112,12 @@ export default function ContatoPage() {
                 <div>
                   <h3 className="font-bold text-brand-purple mb-1">Telefone</h3>
                   <a
-                    href="https://wa.me/5511999999999"
+                    href="https://wa.me/5547988185277"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-brand-gray hover:text-brand-orange transition-colors"
                   >
-                    (11) 99999-9999 (WhatsApp)
+                    (47) 98818-5277 (WhatsApp)
                   </a>
                 </div>
               </div>
@@ -131,7 +131,7 @@ export default function ContatoPage() {
                     Localização
                   </h3>
                   <p className="text-brand-gray">
-                    São Paulo, SP
+                    Jaraguá do Sul, SC
                     <br />
                     Atuação Nacional
                   </p>

@@ -29,14 +29,15 @@ export default function QuemSomosPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-brand-gray text-lg md:text-xl leading-relaxed mb-8 text-center">
             A Nexa Social nasceu da convicção de que a transformação social acontece
-            através de conexões estratégicas e gestão profissional. Acreditamos que
-            empresas, organizações da sociedade civil e igrejas podem ampliar seu
-            impacto quando trabalham de forma integrada e orientada por resultados.
+            através do protagonismo humano e da ação coletiva. Conectamos pessoas,
+            empresas e organizações a ações transformadoras, promovendo a articulação
+            entre setor privado, público e terceiro setor para converter boas intenções
+            em projetos sustentáveis e resultados mensuráveis.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <Card
               title="Missão"
-              description="Conectar setores e potencializar impactos sociais positivos através de consultoria especializada e soluções inovadoras."
+              description="Fortalecer pessoas, organizações e territórios através de metodologias inovadoras e participativas, promovendo impacto social mensurável."
               iconName="Target"
               gradient
               index={0}
@@ -82,25 +83,25 @@ export default function QuemSomosPage() {
             {/* Bio */}
             <div className="lg:col-span-2 space-y-4">
               <h3 className="text-2xl md:text-3xl font-bold text-brand-purple">
-                Luiza Fundadora
+                Luiza Caracek
               </h3>
               <p className="text-brand-gray leading-relaxed">
-                Especialista em gestão social com mais de 15 anos de experiência no
-                terceiro setor, investimento social privado e políticas públicas.
-                Formada em Serviço Social com pós-graduação em Gestão de Projetos
-                Sociais e MBA em Sustentabilidade Empresarial.
+                Assistente Social com mais de 10 anos de experiência em projetos sociais,
+                desenvolvimento institucional e fortalecimento de redes. Especialista em
+                gestão de projetos sociais, sustentabilidade, inovação social e
+                mobilização de recursos.
               </p>
               <p className="text-brand-gray leading-relaxed">
-                Atuou em organizações nacionais e internacionais, liderando programas
-                de desenvolvimento comunitário, estratégias ESG corporativas e
-                projetos de articulação intersetorial. Fundou a Nexa Social com o
-                objetivo de conectar diferentes atores sociais e ampliar o impacto de
-                iniciativas voltadas ao bem comum.
+                Com base em Jaraguá do Sul, SC, Luiza fundou a Nexa Social com a missão
+                de fortalecer pessoas, organizações e territórios através de metodologias
+                inovadoras e participativas, promovendo impacto social mensurável. Atua
+                na conexão entre setor privado, público e terceiro setor, transformando
+                boas intenções em projetos sustentáveis e resultados concretos.
               </p>
               <p className="text-brand-gray leading-relaxed">
-                Acredita que a transformação social acontece quando conhecimento
-                técnico, compromisso ético e metodologias participativas se encontram
-                para criar soluções sustentáveis e inclusivas.
+                Acredita que a transformação social acontece através do protagonismo
+                humano e da ação coletiva, utilizando metodologias participativas para
+                criar soluções sustentáveis que geram impacto duradouro nas comunidades.
               </p>
             </div>
           </div>

@@ -49,7 +49,7 @@ export default function ContatoPage() {
           message: result.error || "Erro ao enviar mensagem. Tente novamente.",
         });
       }
-    } catch (error) {
+    } catch {
       setSubmitMessage({
         type: "error",
         message: "Erro ao enviar mensagem. Tente novamente.",

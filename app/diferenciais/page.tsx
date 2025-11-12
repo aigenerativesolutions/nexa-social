@@ -2,14 +2,6 @@ import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
 import { CTAButton } from "@/components/cta-button";
-import {
-  TrendingUp,
-  Lightbulb,
-  Target,
-  Users,
-  Settings,
-  Network,
-} from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({

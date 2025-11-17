@@ -2,6 +2,7 @@ import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
 import { CTAButton } from "@/components/cta-button";
+import { Marquee } from "@/components/ui/marquee";
 import Image from "next/image";
 
 export default function HomePage() {
@@ -98,18 +99,18 @@ export default function HomePage() {
         centered
         className="bg-brand-pink/20"
       >
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+        <Marquee pauseOnHover className="[--duration:60s]">
           {[1, 2, 3, 4, 5, 6].map((num) => (
-            <div key={num} className="relative aspect-square rounded-2xl overflow-hidden group">
+            <div key={num} className="relative w-80 h-80 rounded-2xl overflow-hidden">
               <Image
                 src={`/experiencia-${num}.png`}
                 alt={`Experiência Nexa Social ${num}`}
                 fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                className="object-cover"
               />
             </div>
           ))}
-        </div>
+        </Marquee>
       </Section>
 
       {/* CTA Final */}

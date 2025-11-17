@@ -4,7 +4,10 @@
       "Bash(timeout 10)",
       "Bash(npm run dev)",
       "Bash(git push -u origin main)",
-      "WebFetch(domain:1pg.link)"
+      "WebFetch(domain:1pg.link)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

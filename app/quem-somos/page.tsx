@@ -20,41 +20,33 @@ export default function QuemSomosPage() {
         description="Somos uma consultoria especializada em gestão social, sustentabilidade e investimento social privado, comprometida em conectar setores e potencializar impactos positivos."
       />
 
-      {/* Nossa História */}
+      {/* Missão */}
       <Section
-        title="Nossa Missão"
+        title="Missão"
         subtitle="Propósito"
         centered
       >
         <div className="max-w-4xl mx-auto">
-          <p className="text-brand-gray text-lg md:text-xl leading-relaxed mb-8 text-center">
-            A Nexa Social nasceu da convicção de que a transformação social acontece
-            através do protagonismo humano e da ação coletiva. Conectamos pessoas,
-            empresas e organizações a ações transformadoras, promovendo a articulação
-            entre setor privado, público e terceiro setor para converter boas intenções
-            em projetos sustentáveis e resultados mensuráveis.
+          <p className="text-brand-gray text-lg md:text-xl leading-relaxed mb-4 text-center font-semibold">
+            Fortalecer pessoas, organizações e territórios através de metodologias inovadoras e participativas, promovendo impacto social, pertencimento e propósito.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-            <Card
-              title="Missão"
-              description="Fortalecer pessoas, organizações e territórios através de metodologias inovadoras e participativas, promovendo impacto social mensurável."
-              iconName="Target"
-              gradient
-              index={0}
-            />
+          <p className="text-brand-gray text-lg leading-relaxed mb-8 text-center">
+            Trabalhamos para transformar boas intenções em projetos sustentáveis e resultados mensuráveis.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-3xl mx-auto">
             <Card
               title="Visão"
               description="Ser referência em consultoria social no Brasil, reconhecida pela qualidade técnica e compromisso com a transformação."
               iconName="Lightbulb"
               gradient
-              index={1}
+              index={0}
             />
             <Card
               title="Valores"
               description="Ética, transparência, inovação, respeito à diversidade e compromisso com resultados sociais mensuráveis."
               iconName="Heart"
               gradient
-              index={2}
+              index={1}
             />
           </div>
         </div>
@@ -86,22 +78,13 @@ export default function QuemSomosPage() {
                 Luiza Caracek
               </h3>
               <p className="text-brand-gray leading-relaxed">
-                Assistente Social com mais de 10 anos de experiência em projetos sociais,
-                desenvolvimento institucional e fortalecimento de redes. Especialista em
-                gestão de projetos sociais, sustentabilidade, inovação social e
-                mobilização de recursos.
+                Sou Luiza Caracek, fundadora da Nexa Social.
               </p>
               <p className="text-brand-gray leading-relaxed">
-                Com base em Jaraguá do Sul, SC, Luiza fundou a Nexa Social com a missão
-                de fortalecer pessoas, organizações e territórios através de metodologias
-                inovadoras e participativas, promovendo impacto social mensurável. Atua
-                na conexão entre setor privado, público e terceiro setor, transformando
-                boas intenções em projetos sustentáveis e resultados concretos.
+                Gaúcha, mãe de três meninos e assistente social por formação, tenho mais de 10 anos de experiência em projetos sociais, desenvolvimento institucional e fortalecimento de redes. Sou especialista em gestão de projetos sociais, sustentabilidade, inovação social e mobilização de recursos.
               </p>
               <p className="text-brand-gray leading-relaxed">
-                Acredita que a transformação social acontece através do protagonismo
-                humano e da ação coletiva, utilizando metodologias participativas para
-                criar soluções sustentáveis que geram impacto duradouro nas comunidades.
+                Minha trajetória é feita de encontros — unir pessoas, causas e propósitos sempre foi minha motivação. Acredito no poder da ação coletiva e no protagonismo humano como motor de qualquer transformação duradoura.
               </p>
             </div>
           </div>

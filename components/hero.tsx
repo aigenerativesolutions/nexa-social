@@ -40,13 +40,13 @@ export function Hero({
         <div className="absolute inset-0 overflow-hidden">
           {/* Logo Mosaic Pattern */}
           <div
-            className="absolute inset-0 opacity-[0.15]"
+            className="absolute inset-0 opacity-[0.12]"
             style={{
               backgroundImage: 'url(/logo.png)',
               backgroundSize: '80px 80px',
               backgroundRepeat: 'space',
               backgroundPosition: 'center',
-              filter: 'brightness(2)'
+              filter: 'brightness(0) invert(1)'
             }}
           />
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl" />

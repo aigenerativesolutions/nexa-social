@@ -43,7 +43,7 @@ export function Hero({
             className="absolute inset-0 opacity-[0.12]"
             style={{
               backgroundImage: 'url(/logo.png)',
-              backgroundSize: '80px 80px',
+              backgroundSize: '120px 120px',
               backgroundRepeat: 'space',
               backgroundPosition: 'center',
               filter: 'brightness(0) invert(1)'

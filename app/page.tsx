@@ -2,6 +2,7 @@ import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
 import { CTAButton } from "@/components/cta-button";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -87,6 +88,28 @@ export default function HomePage() {
           variant="default"
           className="text-center mt-12"
         />
+      </Section>
+
+      {/* Galeria de Experiências */}
+      <Section
+        title="Nossa Trajetória"
+        subtitle="Experiências"
+        description="Momentos que marcam nossa jornada de impacto social e conexões transformadoras."
+        centered
+        className="bg-brand-pink/20"
+      >
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+          {[1, 2, 3, 4, 5, 6].map((num) => (
+            <div key={num} className="relative aspect-square rounded-2xl overflow-hidden group">
+              <Image
+                src={`/experiencia-${num}.png`}
+                alt={`Experiência Nexa Social ${num}`}
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </Section>
 
       {/* CTA Final */}

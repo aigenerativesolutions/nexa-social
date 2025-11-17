@@ -4,6 +4,7 @@ import { Testimonial } from "@/components/testimonial";
 import { CTAButton } from "@/components/cta-button";
 import { Building2, Users, Heart } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
+import Image from "next/image";
 
 export const metadata = createMetadata({
   title: "Clientes e Depoimentos",
@@ -64,6 +65,34 @@ export default function ClientesDepoimentosPage() {
         subtitle="Quem confia na Nexa Social"
         description="Temos orgulho de trabalhar com organizações comprometidas com a transformação social em diferentes setores."
       />
+
+      {/* Galeria de Clientes */}
+      <Section
+        title="Parceiros e Clientes"
+        subtitle="Conexões"
+        description="Organizações que confiam na Nexa Social para transformar impacto social em realidade."
+        centered
+        className="bg-brand-pink/20"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="relative aspect-video rounded-2xl overflow-hidden bg-white p-8 flex items-center justify-center">
+            <Image
+              src="/clientes-1.png"
+              alt="Clientes e Parceiros Nexa Social"
+              fill
+              className="object-contain p-4"
+            />
+          </div>
+          <div className="relative aspect-video rounded-2xl overflow-hidden bg-white p-8 flex items-center justify-center">
+            <Image
+              src="/clientes-2.png"
+              alt="Organizações Parceiras Nexa Social"
+              fill
+              className="object-contain p-4"
+            />
+          </div>
+        </div>
+      </Section>
 
       {/* Clientes */}
       <Section

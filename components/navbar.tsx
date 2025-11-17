@@ -49,14 +49,16 @@ export function Navbar() {
             className="flex items-center space-x-2 group"
             aria-label="Nexa Social - Página Inicial"
           >
-            <Image
-              src="/logo.png"
-              alt="Nexa Social Logo"
-              width={40}
-              height={40}
-              className="group-hover:scale-110 transition-transform"
-              priority
-            />
+            <div className="w-10 h-10 overflow-hidden flex items-center justify-center">
+              <Image
+                src="/logo.png"
+                alt="Nexa Social Logo"
+                width={48}
+                height={48}
+                className="group-hover:scale-110 transition-transform scale-125"
+                priority
+              />
+            </div>
             <span className={cn(
               "text-xl font-bold transition-colors",
               isScrolled ? "text-brand-purple" : "text-white"

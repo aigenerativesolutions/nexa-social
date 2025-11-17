@@ -64,10 +64,10 @@ export default function QuemSomosPage() {
             <div className="lg:col-span-1 mx-auto w-full max-w-sm">
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-gradient-purple">
                 <Image
-                  src="/ella.png"
-                  alt="Fundadora da Nexa Social"
+                  src="/contactt.jpg"
+                  alt="Luiza Caracek - Fundadora da Nexa Social"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
             </div>

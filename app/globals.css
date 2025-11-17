@@ -83,6 +83,12 @@
     background: linear-gradient(135deg, #432766 0%, #443B60 100%);
   }
 
+  .gradient-purple-animated {
+    background: linear-gradient(135deg, #2a1545, #432766, #443B60, #5a4d73);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
   .gradient-orange {
     background: linear-gradient(135deg, #FFA51F 0%, #FFB84D 100%);
   }
@@ -157,5 +163,17 @@
   }
   75% {
     transform: translate(40px, 15px) scale(0.95);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

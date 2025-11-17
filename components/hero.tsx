@@ -32,7 +32,7 @@ export function Hero({
   return (
     <section
       className={`relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden ${
-        gradient ? "gradient-purple" : "bg-white"
+        gradient ? "gradient-purple-animated" : "bg-white"
       }`}
     >
       {/* Background Decoration */}

@@ -9,9 +9,9 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        title="Conexões que transformam!"
+        title="Conexões que transformam realidades."
         subtitle="Nexa Social"
-        description="Nexa Social nasce do propósito de conectar pessoas, empresas e organizações a ações que transformam. Atuamos com foco em impacto social, inovação e desenvolvimento humano, promovendo conexões entre propósito e prática por meio de projetos, treinamentos, palestras, oficinas e consultorias. Acreditamos que cada iniciativa pode gerar valor coletivo — fortalecendo vínculos, estimulando a empatia e promovendo o desenvolvimento sustentável. Nosso papel é construir pontes entre o setor privado, público e o terceiro setor, impulsionando soluções sociais que unem sensibilidade e estratégia."
+        description="A Nexa Social conecta pessoas, empresas e organizações a ações de impacto social. Desenvolvemos projetos, treinamentos, palestras e consultorias que fortalecem vínculos, promovem ambientes seguros e impulsionam o desenvolvimento humano e sustentável. Nosso foco é transformar propósito em prática — criando soluções sociais estratégicas que unem sensibilidade, técnica e resultados concretos."
         ctaText="Fale com a Nexa Social"
         ctaHref="/contato"
         imageSrc="/profesional.png"

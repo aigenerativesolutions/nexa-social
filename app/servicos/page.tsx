@@ -12,33 +12,44 @@ export const metadata = createMetadata({
 });
 
 const servicosEmpresas = [
-  "Diagnóstico de maturidade ESG",
-  "Elaboração de estratégias de sustentabilidade",
-  "Estruturação de programas de investimento social privado",
-  "Gestão de projetos sociais corporativos",
-  "Mensuração de impacto social",
-  "Engajamento de stakeholders",
-  "Relatórios de sustentabilidade e comunicação de impacto",
+  {
+    title: "Voluntariado Corporativo",
+    description: "Estruturação de programas de voluntariado estratégico que conectam colaboradores a causas sociais, fortalecendo a cultura organizacional e gerando impacto positivo nas comunidades."
+  },
+  {
+    title: "Proteção à Infância",
+    description: "Desenvolvimento de políticas, protocolos e programas de proteção à infância para empresas, garantindo ambientes seguros e conformidade com legislações nacionais e internacionais."
+  },
+  {
+    title: "Capacitação Social e ESG",
+    description: "Formação de equipes em temas de responsabilidade social, sustentabilidade e governança ESG, integrando propósito e estratégia de negócio para resultados mensuráveis."
+  },
+  {
+    title: "Gestão e Desenvolvimento de Projetos",
+    description: "Planejamento, implementação e avaliação de projetos de investimento social privado, com metodologias inovadoras e foco em impacto social sustentável e mensurável."
+  }
 ];
 
-const servicosOSCs = [
-  "Planejamento estratégico participativo",
-  "Fortalecimento institucional e governança",
-  "Captação de recursos e mobilização de doadores",
-  "Elaboração de projetos sociais e editais",
-  "Monitoramento e avaliação de projetos",
-  "Articulação de parcerias intersetoriais",
-  "Capacitação de equipes e lideranças",
+const servicosOrganizacoes = [
+  {
+    title: "Elaboração e Gestão de Projetos",
+    description: "Apoio na concepção, planejamento e gestão de projetos sociais, incluindo elaboração de propostas para editais, captação de recursos e monitoramento de resultados."
+  },
+  {
+    title: "Capacitação de Equipes e Lideranças",
+    description: "Programas formativos para desenvolvimento de competências técnicas e de liderança, fortalecendo a capacidade institucional e a qualidade dos serviços prestados."
+  },
+  {
+    title: "Políticas e Protocolos de Proteção",
+    description: "Desenvolvimento e implementação de políticas de proteção à infância e adolescência, protocolos de safeguarding e sistemas de gestão de riscos para organizações sociais e igrejas."
+  }
 ];
 
-const servicosIgrejas = [
-  "Consultoria em gestão eclesiástica",
-  "Estruturação de projetos sociais comunitários",
-  "Articulação com políticas públicas",
-  "Desenvolvimento de programas de assistência social",
-  "Capacitação de lideranças e voluntários",
-  "Mobilização comunitária e advocacy",
-  "Parcerias entre igreja e sociedade civil",
+const servicosPalestras = [
+  "Empresas com Propósito: integrando responsabilidade social e estratégia de negócio",
+  "Proteção à Infância: construindo ambientes seguros e acolhedores",
+  "Inovação e Impacto Social: metodologias participativas para transformação",
+  "Diversidade e Inclusão: promovendo equidade e pertencimento"
 ];
 
 export default function ServicosPage() {
@@ -56,68 +67,59 @@ export default function ServicosPage() {
         subtitle="Investimento Social Privado"
         description="Apoiamos empresas no desenvolvimento de estratégias de sustentabilidade e programas sociais que geram valor compartilhado."
       >
-        <Card
-          title="Serviços Especializados"
-          description="Desenvolvemos soluções customizadas que conectam objetivos de negócio com impacto social positivo."
-          className="mb-8"
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {servicosEmpresas.map((servico, index) => (
             <div
               key={index}
-              className="flex items-start gap-3 p-4 bg-white rounded-xl border-2 border-brand-pink hover:border-brand-purple transition-colors"
+              className="flex flex-col gap-3 p-6 bg-white rounded-xl border-2 border-brand-pink hover:border-brand-purple transition-colors"
             >
-              <CheckCircle2 className="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5" />
-              <span className="text-brand-midnight font-medium">{servico}</span>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5" />
+                <h3 className="text-lg font-bold text-brand-purple">{servico.title}</h3>
+              </div>
+              <p className="text-brand-gray text-base leading-relaxed pl-9">{servico.description}</p>
             </div>
           ))}
         </div>
       </Section>
 
-      {/* Serviços para OSCs */}
+      {/* Serviços para Organizações Sociais e Igrejas */}
       <Section
-        title="Para Organizações da Sociedade Civil"
+        title="Para Organizações Sociais e Igrejas"
         subtitle="Fortalecimento Institucional"
-        description="Fortalecemos OSCs para que ampliem seu impacto social e alcancem sustentabilidade financeira e institucional."
+        description="Fortalecemos organizações da sociedade civil e igrejas para que ampliem seu impacto social através de gestão profissional e projetos estruturados."
         className="bg-brand-pink/20"
       >
-        <Card
-          title="Consultoria Completa"
-          description="Apoiamos organizações em todas as etapas do ciclo de gestão, desde o planejamento até a avaliação de resultados."
-          className="mb-8"
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {servicosOSCs.map((servico, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {servicosOrganizacoes.map((servico, index) => (
             <div
               key={index}
-              className="flex items-start gap-3 p-4 bg-white rounded-xl border-2 border-brand-pink hover:border-brand-purple transition-colors"
+              className="flex flex-col gap-3 p-6 bg-white rounded-xl border-2 border-brand-pink hover:border-brand-purple transition-colors"
             >
-              <CheckCircle2 className="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5" />
-              <span className="text-brand-midnight font-medium">{servico}</span>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5" />
+                <h3 className="text-lg font-bold text-brand-purple">{servico.title}</h3>
+              </div>
+              <p className="text-brand-gray text-base leading-relaxed pl-9">{servico.description}</p>
             </div>
           ))}
         </div>
       </Section>
 
-      {/* Serviços para Igrejas */}
+      {/* Palestras e Workshops */}
       <Section
-        title="Para Igrejas"
-        subtitle="Gestão e Projetos Sociais"
-        description="Assessoramos igrejas no desenvolvimento de projetos sociais estratégicos e na articulação com diferentes atores."
+        title="Palestras e Workshops"
+        subtitle="Formação e Sensibilização"
+        description="Palestras e workshops interativos para sensibilizar e capacitar equipes em temas estratégicos de impacto social."
       >
-        <Card
-          title="Atuação Social da Igreja"
-          description="Potencializamos o impacto social das igrejas por meio de gestão profissional e conexões estratégicas."
-          className="mb-8"
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {servicosIgrejas.map((servico, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+          {servicosPalestras.map((palestra, index) => (
             <div
               key={index}
-              className="flex items-start gap-3 p-4 bg-white rounded-xl border-2 border-brand-pink hover:border-brand-purple transition-colors"
+              className="flex items-start gap-3 p-5 bg-white rounded-xl border-2 border-brand-pink hover:border-brand-purple transition-colors"
             >
               <CheckCircle2 className="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5" />
-              <span className="text-brand-midnight font-medium">{servico}</span>
+              <span className="text-brand-midnight font-medium">{palestra}</span>
             </div>
           ))}
         </div>
@@ -128,6 +130,7 @@ export default function ServicosPage() {
         title="Interessado em nossos serviços?"
         description="Entre em contato para agendar uma conversa e conhecer como podemos apoiar sua organização."
         centered
+        className="bg-brand-pink/20"
       >
         <CTAButton
           text="Solicite uma proposta"

@@ -49,16 +49,19 @@ export function Navbar() {
             className="flex items-center space-x-2 group"
             aria-label="Nexa Social - Página Inicial"
           >
-            <div className="w-10 h-10 overflow-hidden flex items-center justify-center">
-              <Image
-                src="/logo.png"
-                alt="Nexa Social Logo"
-                width={48}
-                height={48}
-                className="group-hover:scale-110 transition-transform scale-125"
-                priority
-              />
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Nexa Social Logo"
+              width={40}
+              height={40}
+              className={cn(
+                "group-hover:scale-110 transition-all",
+                isScrolled
+                  ? "brightness-0 saturate-100% [filter:brightness(0)_saturate(100%)_invert(21%)_sepia(19%)_saturate(2234%)_hue-rotate(229deg)_brightness(93%)_contrast(91%)]"
+                  : "brightness-0 invert"
+              )}
+              priority
+            />
             <span className={cn(
               "text-xl font-bold transition-colors",
               isScrolled ? "text-brand-purple" : "text-white"

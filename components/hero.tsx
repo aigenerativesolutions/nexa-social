@@ -49,8 +49,8 @@ export function Hero({
               filter: 'brightness(0) invert(1)'
             }}
           />
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl" />
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-purple/20 rounded-full blur-3xl" />
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-float-slow" />
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-purple/20 rounded-full blur-3xl animate-float-slow-reverse" />
         </div>
       )}
 

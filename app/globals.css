@@ -102,6 +102,14 @@
   .animate-marquee-vertical {
     animation: marquee-vertical var(--duration) linear infinite;
   }
+
+  .animate-float-slow {
+    animation: float-slow 20s ease-in-out infinite;
+  }
+
+  .animate-float-slow-reverse {
+    animation: float-slow-reverse 25s ease-in-out infinite;
+  }
 }
 
 @keyframes marquee {
@@ -119,5 +127,35 @@
   }
   to {
     transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(30px, -30px) scale(1.05);
+  }
+  50% {
+    transform: translate(-20px, -50px) scale(0.95);
+  }
+  75% {
+    transform: translate(-40px, -20px) scale(1.02);
+  }
+}
+
+@keyframes float-slow-reverse {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-35px, 25px) scale(0.98);
+  }
+  50% {
+    transform: translate(25px, 45px) scale(1.05);
+  }
+  75% {
+    transform: translate(40px, 15px) scale(0.95);
   }
 }

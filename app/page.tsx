@@ -9,7 +9,7 @@ export default function HomePage() {
       <Hero
         title="Conexões que transformam!"
         subtitle="Nexa Social"
-        description="Consultoria especializada em gestão social, sustentabilidade e investimento social privado. Desenvolvemos soluções personalizadas para empresas, organizações da sociedade civil e igrejas que desejam gerar impacto social positivo."
+        description="Nexa Social nasce do propósito de conectar pessoas, empresas e organizações a ações que transformam. Atuamos com foco em impacto social, inovação e desenvolvimento humano, promovendo conexões entre propósito e prática por meio de projetos, treinamentos, palestras, oficinas e consultorias. Acreditamos que cada iniciativa pode gerar valor coletivo — fortalecendo vínculos, estimulando a empatia e promovendo o desenvolvimento sustentável. Nosso papel é construir pontes entre o setor privado, público e o terceiro setor, impulsionando soluções sociais que unem sensibilidade e estratégia."
         ctaText="Fale com a Nexa Social"
         ctaHref="/contato"
         imageSrc="/profesional.png"

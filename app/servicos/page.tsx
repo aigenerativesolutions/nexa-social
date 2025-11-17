@@ -1,6 +1,5 @@
 import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";
-import { Card } from "@/components/card";
 import { CTAButton } from "@/components/cta-button";
 import { CheckCircle2 } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";

@@ -84,7 +84,7 @@
   }
 
   .gradient-purple-animated {
-    background: linear-gradient(135deg, #2a1545, #432766, #443B60, #5a4d73);
+    background: linear-gradient(135deg, #5a4d73, #6b5d87, #443B60, #554a70);
     background-size: 400% 400%;
     animation: gradient-shift 15s ease infinite;
   }

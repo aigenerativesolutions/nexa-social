@@ -74,27 +74,27 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:contato@nexasocial.com.br"
+                  href="mailto:luizadcaracek@gmail.com"
                   className="flex items-center gap-2 text-brand-pink hover:text-brand-orange transition-colors text-sm group"
                 >
                   <Mail className="w-4 h-4 flex-shrink-0" />
-                  <span className="break-all">contato@nexasocial.com.br</span>
+                  <span className="break-all">luizadcaracek@gmail.com</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5547988185277"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-brand-pink hover:text-brand-orange transition-colors text-sm group"
                 >
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  <span>(11) 99999-9999</span>
+                  <span>(47) 98818-5277</span>
                 </a>
               </li>
               <li className="flex items-start gap-2 text-brand-pink text-sm">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>São Paulo, SP - Atuação Nacional</span>
+                <span>Jaraguá do Sul, SC - Atuação Nacional</span>
               </li>
             </ul>
 
